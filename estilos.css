@@ -1,0 +1,374 @@
+* {
+    padding: 0;/*establece el espacio de relleno requerido por todos los lados de un elemento.*/
+    margin: 0; /*Establece la anchura de algunos o todos los márgenes de los elementos*/
+    box-sizing: border-box;/*debe calcular el ancho y alto total de un elemento.*/
+}
+
+body {
+    font-family: 'open sans';/*permite al autor especificar el tipo de fuente para un elemento.*/
+    font-size: 16px;/*especifica la dimensión de la letra*/
+}
+/* Header */
+
+header {
+    width: 100%;/*especifica la anchura del area de contenido de un elemento.*/
+    height: 650px;/* especifica la altura del area de contenido de un elemento.*/
+    background-image: url(kiritom.jpg);/*establece una o más imágenes de fondo para un elemento.*/
+    background-attachment: fixed;/*determina si la imagen será fija dentro de la pantalla o se desplazará junto al bloque contenedor.*/
+    background-position: center;/*define la posición inicial de la imagen de fondo especificada.*/
+    background-size: cover;/*especifica el tamaño de las imágenes de fondo.*/
+    position: relative;/*especifica cómo un elemento es posicionado en el documento.*/
+    overflow: hidden;/*especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+    color: #fff;/*Establece el color del texto de un elemento*/
+    text-align: center;/*Establece la alineación del contenido de un elemento de bloque*/
+}
+
+header .textos {
+    margin-top: 152px;/*Establece la anchura del margen superior de los elementos de bloque*/
+}
+
+header .titulo {
+    font-size: 85px;/*especifica la dimensión de la letra*/
+}
+
+header .subtitulo {
+    font-size: 42px;/*especifica la dimensión de la letra*/
+    font-weight: 300;/*Establece el grosor de cada letra*/
+    margin-bottom: 32px;/*Establece la anchura del margen inferior de los elementos de bloque*/
+}
+
+header .boton {
+    display: inline-block;/*Establece el tipo de caja generada por un elemento*/
+    padding: 6px;/*establece el espacio de relleno requerido por todos los lados de un elemento.*/
+    width: 128px;/*especifica la anchura del area de contenido de un elemento.*/
+    border: 1px solid #fff;/*permite definir de golpe todos los bordes en una única regla de la hoja de estilos.*/
+    color: #fff;/*Establece el color del texto de un elemento*/
+    font-size: 19px;/*especifica la dimensión de la letra*/
+    text-align: center;/*establece la alineación horizontal de un elemento de bloque o cuadro de celda de tabla.*/
+    text-decoration: none;/*Establece la decoración que se añade al texto de un elemento*/
+    border-radius: 16px;/*permite a los desarrolladores Web definir qué tan redondeadas serán las esquinas.*/
+}
+
+.sesgoabajo {
+    z-index: 10;/*indica el orden de un elemento posicionado y sus descendientes.*/
+    position: absolute;/*especifica cómo un elemento es posicionado en el documento.*/
+    bottom: 0;/*Indica el desplazamiento entre el borde inferior del elemento y la parte inferior de su elemento contenedor.*/
+    left: 0;/*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor.*/
+    border-width: 0 0 35vh 100vw;/*define el ancho del borde.*/
+    border-style: solid;/*Establece el estilo de algunos o todos los bordes de los elementos*/
+    border-color: transparent transparent #fff transparent;/*Establece el color de algunos o todos los bordes de los elementos*/
+}
+
+.sesgoarriba {
+    z-index: 10;/*indica el orden de un elemento posicionado y sus descendientes.*/
+    position: absolute;/*especifica cómo un elemento es posicionado en el documento.*/
+    top: 0;/*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+    left: 0;/*especifica parte de la posición de un elemento (posicionado - es decir, con una posición determinada por código).*/
+    border-width: 35vh 100vw 0 0;/*define el ancho del borde.*/
+    border-style: solid;/*Establece el estilo de algunos o todos los bordes de los elementos*/
+    border-color: #fff transparent transparent transparent;/*Establece el color de algunos o todos los bordes de los elementos*/
+}
+
+.contenedor {
+    width: 90%;/*especifica la anchura del area de contenido de un elemento.*/
+    max-width: 1000px;/*especifica la anchura máxima del area de contenido de un elemento.*/
+    margin: auto;/*Establece la anchura de algunos o todos los márgenes de los elementos*/
+    overflow: hidden;/*especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+    padding: 52px 0;/*establece el espacio de relleno requerido por todos los lados de un elemento.*/
+}
+
+/* Main */
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color: rgb(24, 16, 16);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;/* especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas.*/
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video>, debería redimensionarse para ajustarse a su contenedor.*/
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;/*define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor.*/
+}
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);/*se utiliza para arrojar una o más sombras a un elemento. */
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.fondo {
+    height: 900px;
+    position: relative;
+    background-image: url(fondo.png);/*Establece la imagen de fondo de un elemento*/
+    overflow: hidden;
+    background-attachment: fixed;/*Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
+    background-position: center;
+    padding-top: 130px;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 64px;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background: #2c3e50;
+    height: auto;
+}
+
+.titulo-footer,
+.subtitulo-footer {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.subtitulo-footer {
+    font-size: 16px;
+    margin-bottom: 64px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 16px;
+    border-top: 5px solid rgba(37, 37, 33, .7);/*Establece algunas o todas las propiedades del borde superior de los elementos*/
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: rgba(37, 37, 33, .7);
+    width: 96px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+    header .titulo {
+        font-size: 75px;
+    }
+    .none {
+        display: none
+    }
+    .imagenes {
+        flex-grow: 1;/*especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex), en su dirección principal.*/
+    }
+    .card {
+        width: 90%;
+    }
+    .fondo {
+        height: auto;
+    }
+    .especial {
+        display: none;
+    }
+    .cliente {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+    header .titulo {
+        font-size: 65px;
+    }
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+    .titulo-patrocinadores {
+        font-size: 46px;
+    }
+    .subtitulo-patrocinadores {
+        font-size: 20px;
+    }
+}
